@@ -9,29 +9,29 @@
 	],
 "creatorBuild": "26330",
 "files": {
-	"\/adhoc\/adhoc.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/adhoc\/adhoc-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/adhoc\/Icon\r": {
+	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/adhoc\/Icon\r",
+		"oAP": "\/build\/.gitignore",
 		"oF": 0
+		},
+	"\/adhoc\/adhoc.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/adhoc\/adhoc-min.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 4601,
 		"oA": 0,
-		"oAP": "\/apple-touch-icon.png",
+		"oAP": "\/build\/apple-touch-icon.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -39,16 +39,22 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/browserconfig.xml",
+		"oAP": "\/build\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
 		"oF": 0
 		},
 	"\/css\/bootstrap-theme.css": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/bootstrap-theme-min.css",
+		"oAP": "\/build\/css\/bootstrap-theme-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -56,26 +62,26 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/css\/bootstrap-theme.css.map",
+		"oAP": "\/build\/css\/bootstrap-theme.css.map",
 		"oF": 0
 		},
 	"\/css\/bootstrap-theme.min.css": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/bootstrap-theme.min-min.css",
+		"oAP": "\/build\/css\/bootstrap-theme.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
 	"\/css\/bootstrap.css": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/bootstrap-min.css",
+		"oAP": "\/build\/css\/bootstrap-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -83,50 +89,33 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/css\/bootstrap.css.map",
+		"oAP": "\/build\/css\/bootstrap.css.map",
 		"oF": 0
 		},
 	"\/css\/bootstrap.min.css": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/bootstrap.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/css\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/css\/Icon\r",
-		"oF": 0
-		},
-	"\/css\/main-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/main-min-min.css",
+		"oAP": "\/build\/css\/bootstrap.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
 	"\/css\/main.css": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/main-min.css",
-		"oF": 0,
+		"oAP": "\/build\/css\/main.css",
+		"oF": 2,
 		"oS": 3
 		},
 	"\/data.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/data-min.json",
+		"oAP": "\/build\/data-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -135,14 +124,14 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/glyphicons-halflings-regular.eot",
+		"oAP": "\/build\/fonts\/glyphicons-halflings-regular.eot",
 		"oF": 0
 		},
 	"\/fonts\/glyphicons-halflings-regular.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/glyphicons-halflings-regular.svg",
+		"oAP": "\/build\/fonts\/glyphicons-halflings-regular.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -152,28 +141,28 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/glyphicons-halflings-regular.ttf",
+		"oAP": "\/build\/fonts\/glyphicons-halflings-regular.ttf",
 		"oF": 0
 		},
 	"\/fonts\/glyphicons-halflings-regular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/glyphicons-halflings-regular.woff",
+		"oAP": "\/build\/fonts\/glyphicons-halflings-regular.woff",
 		"oF": 0
 		},
 	"\/fonts\/icomoon.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/icomoon.eot",
+		"oAP": "\/build\/fonts\/icomoon.eot",
 		"oF": 0
 		},
 	"\/fonts\/icomoon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/icomoon.svg",
+		"oAP": "\/build\/fonts\/icomoon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -183,38 +172,24 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/icomoon.ttf",
+		"oAP": "\/build\/fonts\/icomoon.ttf",
 		"oF": 0
 		},
 	"\/fonts\/icomoon.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/fonts\/icomoon.woff",
-		"oF": 0
-		},
-	"\/fonts\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/fonts\/Icon\r",
-		"oF": 0
-		},
-	"\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/Icon\r",
+		"oAP": "\/build\/fonts\/icomoon.woff",
 		"oF": 0
 		},
 	"\/img\/banana-bread.png": {
 		"ft": 32768,
 		"iS": 187246,
 		"oA": 0,
-		"oAP": "\/img\/banana-bread.png",
+		"oAP": "\/build\/img\/banana-bread.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -222,10 +197,10 @@
 		"ft": 32768,
 		"iS": 142920,
 		"oA": 0,
-		"oAP": "\/img\/breadfruit-saltfish-balls.png",
+		"oAP": "\/build\/img\/breadfruit-saltfish-balls.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -233,10 +208,10 @@
 		"ft": 32768,
 		"iS": 158705,
 		"oA": 0,
-		"oAP": "\/img\/buljol.png",
+		"oAP": "\/build\/img\/buljol.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -244,7 +219,7 @@
 		"ft": 32768,
 		"iS": 185118,
 		"oA": 0,
-		"oAP": "\/img\/coconut-sweetbread.png",
+		"oAP": "\/build\/img\/coconut-sweetbread.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
@@ -255,10 +230,10 @@
 		"ft": 32768,
 		"iS": 198397,
 		"oA": 0,
-		"oAP": "\/img\/coucou-flying-fish.png",
+		"oAP": "\/build\/img\/coucou-flying-fish.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -266,10 +241,10 @@
 		"ft": 32768,
 		"iS": 3584,
 		"oA": 0,
-		"oAP": "\/img\/favicon\/favicon-114.png",
+		"oAP": "\/build\/img\/favicon\/favicon-114.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -277,10 +252,10 @@
 		"ft": 32768,
 		"iS": 4601,
 		"oA": 0,
-		"oAP": "\/img\/favicon\/favicon-144.png",
+		"oAP": "\/build\/img\/favicon\/favicon-144.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -288,10 +263,10 @@
 		"ft": 32768,
 		"iS": 712,
 		"oA": 0,
-		"oAP": "\/img\/favicon\/favicon-32.png",
+		"oAP": "\/build\/img\/favicon\/favicon-32.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -299,10 +274,10 @@
 		"ft": 32768,
 		"iS": 1461,
 		"oA": 0,
-		"oAP": "\/img\/favicon\/favicon-54.png",
+		"oAP": "\/build\/img\/favicon\/favicon-54.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -310,32 +285,18 @@
 		"ft": 32768,
 		"iS": 2064,
 		"oA": 0,
-		"oAP": "\/img\/favicon\/favicon-72.png",
+		"oAP": "\/build\/img\/favicon\/favicon-72.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
-		},
-	"\/img\/favicon\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/img\/favicon\/Icon\r",
-		"oF": 0
-		},
-	"\/img\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/img\/Icon\r",
-		"oF": 0
 		},
 	"\/img\/isle-dine-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/isle-dine-logo.svg",
+		"oAP": "\/build\/img\/isle-dine-logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -345,10 +306,10 @@
 		"ft": 32768,
 		"iS": 234069,
 		"oA": 0,
-		"oAP": "\/img\/isleanddine-facebook-icon.png",
+		"oAP": "\/build\/img\/isleanddine-facebook-icon.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -356,10 +317,10 @@
 		"ft": 32768,
 		"iS": 597883,
 		"oA": 0,
-		"oAP": "\/img\/isleanddine-tweet-icon.png",
+		"oAP": "\/build\/img\/isleanddine-tweet-icon.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -367,10 +328,10 @@
 		"ft": 32768,
 		"iS": 1495,
 		"oA": 0,
-		"oAP": "\/img\/pin-it-28.png",
+		"oAP": "\/build\/img\/pin-it-28.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -378,7 +339,7 @@
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/pin-it-28.svg",
+		"oAP": "\/build\/img\/pin-it-28.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -388,7 +349,7 @@
 		"ft": 32768,
 		"iS": 155897,
 		"oA": 0,
-		"oAP": "\/img\/rum-punch.png",
+		"oAP": "\/build\/img\/rum-punch.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
@@ -399,33 +360,16 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/index.html",
+		"oAP": "\/build\/index.html",
 		"oF": 0
-		},
-	"\/js\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/Icon\r",
-		"oF": 0
-		},
-	"\/js\/main-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/js\/main.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/main-min.js",
-		"oF": 0,
+		"oAP": "\/build\/js\/main.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 0
 		},
@@ -434,7 +378,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/vendor\/bootstrap-min.js",
+		"oAP": "\/build\/js\/vendor\/bootstrap-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -444,24 +388,17 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/vendor\/bootstrap.min-min.js",
+		"oAP": "\/build\/js\/vendor\/bootstrap.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/js\/vendor\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/vendor\/Icon\r",
-		"oF": 0
 		},
 	"\/js\/vendor\/jquery-1.11.2.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/vendor\/jquery-1.11.2.min-min.js",
+		"oAP": "\/build\/js\/vendor\/jquery-1.11.2.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -471,7 +408,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/vendor\/modernizr-2.8.3-respond-1.4.2.min-min.js",
+		"oAP": "\/build\/js\/vendor\/modernizr-2.8.3-respond-1.4.2.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -481,18 +418,36 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/vendor\/npm-min.js",
+		"oAP": "\/build\/js\/vendor\/npm-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/build\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/style-min.css": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/style-min-min.css",
+		"oAP": "\/build\/style-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -500,10 +455,10 @@
 		"ft": 32768,
 		"iS": 7861,
 		"oA": 0,
-		"oAP": "\/tile-wide.png",
+		"oAP": "\/build\/tile-wide.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -511,7 +466,7 @@
 		"ft": 32768,
 		"iS": 3482,
 		"oA": 0,
-		"oAP": "\/tile.png",
+		"oAP": "\/build\/tile.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
@@ -527,7 +482,8 @@
 	"creationDate": 532932055,
 	"displayValue": "id-bajanbites",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "\/apple-touch-icon.png"
+	"iconImageName": "\/apple-touch-icon.png",
+	"lastBuiltDate": 541791923
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -783,7 +739,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 0,
+	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
@@ -2297,7 +2253,7 @@
 		"createSourceMap": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0
+		"shouldRunBless": 1
 		},
 	"languageDefaultsGIF": {
 		"autoOutputAction": 0,
@@ -2679,7 +2635,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "\/build"
 	},
 "settingsFileVersion": "3"
 }

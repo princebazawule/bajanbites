@@ -7,8 +7,8 @@ jQuery(document).ready( function($) {
 	var ul;
 
 	$.ajax({
-	    url: "http://isleanddine.com/data.json",
-	    // url: "data.json",
+	    // url: "http://isleanddine.com/data.json",
+	    url: "data.json",
 	    headers: {
 	    	'Cache-Control': 'no-cache, no-store, must-revalidate',
 	    	'Pragma': 'no-cache',
