@@ -1,6 +1,8 @@
 
 Icon
 
+.DS_Store
+
 js/.DS_Store
 
 js/Icon
@@ -14,3 +16,5 @@ img/favicon/Icon
 fonts/Icon
 
 css/Icon
+
+adhoc/Icon
