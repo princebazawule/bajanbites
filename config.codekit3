@@ -16,14 +16,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 0
 		},
-	"\/adhoc\/adhoc.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/build\/adhoc\/adhoc-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 4601,
