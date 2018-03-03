@@ -1,0 +1,521 @@
+:root {
+  
+  /* colours */
+  --color-blue: rgba(32, 142, 213, 1);
+  --color-purple: rgba(22, 98, 243, 1);
+  --color-orange: rgba(255, 144, 26, 1);
+  --color-white: rgba(255, 255, 255, 1);
+   --color-title: rgba(48, 48, 50, 1); 
+  --color-description: rgba(74, 74, 74, 1);  
+  --color-dark_blue: rgba(7, 53, 83, 1);
+  --color-bright_blue: rgba(53, 153, 225, 1);
+  --color-dark_blue_ish: rgba(23, 120, 217, 1);
+  --color-semi_blue: rgba(23, 120, 217, 1);
+  --color-grey: rgba(155, 155, 155, 1);
+  
+  /* fonts */
+  --font-main: 'Actor', sans-serif;
+  --font-heading: 'Varela Round', sans-serif;
+
+  
+  /* font-sizes */
+  --size-tiny: 0.8em;
+  --size-normal: 1em;
+  --size-big: 1.4em;
+  --size-large: 1.8em;
+  --size-massive: 2.5em;
+  
+  /* font-weights */
+  --weight-normal: 500;
+  --weight-bold: 800;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+	text-rendering: optimizeLegibility;	
+	-webkit-font-smoothing: antialiased;
+	font-smooth: always;
+}
+
+a,
+a:link,
+:visited,
+a:hover,
+a:active {
+	transition: all .2s ease-in-out !important;
+	text-decoration: none;
+}
+
+
+body {
+	/*position: absolute;*/
+	display: grid; /* define as grid */
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to right top, var(--color-blue), var(--color-blue) 40%, var(--color-purple), var(--color-purple));
+	font-family: var(--font-main);
+	color: var(--color-white);
+	grid-template-areas: "nav"
+                       	 "main"
+                       	 "foot";
+	align-items: start;
+}
+	nav,
+	main,
+	footer {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin: auto; 
+  }
+
+/*------------- nav ---------------- */
+  nav {
+    grid-area: nav;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  	/* brand */
+  	a.nav-brand {
+  		position: relative;
+  		width: 100%;
+  		display: block;
+  		margin: 1.5em 0;
+  		padding: 0;
+  	}
+  		/* svg-image */
+	  	a.nav-brand img {
+	  		width: 200%;
+	  		max-width: 220px;
+	  	}
+
+  	/* description */
+  	.nav-description {
+  		font-size: var(--size-big);
+  		margin: 1em auto 1.5em;
+  		width: 90%;
+  	}
+
+  		/* highlight */
+  		.highlight {
+  			color: var(--color-dark_blue);
+  		}
+
+  	/* share */
+  	.nav-share {
+  		position: relative;
+  	}
+	  	/* share-header */
+	  	.nav-share header {
+	  		color: var(--color-dark_blue);
+	  		border-bottom: 1px solid var(--color-white);
+	  		margin: 0 auto 1em;
+	  		padding-bottom: 0.5em;
+	  		font-size: var(--size-large);
+	  	}
+
+	  	/* share-list */
+	  	ul.social-icons {
+	  		position: relative;
+	  		margin: 0;
+	  		padding: 0;
+	  		list-style: none;
+	  		display: flex;
+	  	}
+
+		  	/* share-list-items */
+		  	ul.social-icons li {
+		  		margin: 0 0.35em;
+		  	}
+		  	
+			  	/* share-list-items-hover */
+			  	ul.social-icons li a:hover {
+			  		text-decoration: none;
+			  		color: var(--color-white);
+			  	}
+
+/*------------- main ---------------- */
+main {
+	grid-area: main;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+
+	/* set sizes */
+	.flip-container, 
+	.front, 
+	.back {
+		width: 307px;
+		max-width: 307px;
+		height: 484px;
+	}
+		
+	/* entire flip container, keeps perspective + additional (optional) styles */
+	.flip-container {
+		position: relative;
+		perspective: 2000px;
+		transform-style: preserve-3d;
+	}
+
+	/*recipe-card */
+	.recipe {
+		flex: 0 0 95%;
+		margin: 1em 1.75% 2.5em;
+		padding: 0;
+		border: none;
+		box-shadow: none;
+		max-width: 307px;
+		height: 484px;
+		position: relative;
+	}
+	
+			
+	/* flip speed goes here */
+	.flipper {
+		position: relative;
+		transition: all 0.8s ease-in-out;
+		transform-style: preserve-3d;
+	}
+
+	/* hide back of pane during swap + additional (optional) styles */
+	.front, 
+	.back {
+		position: absolute;
+		backface-visibility: hidden;
+		transition: all 0.8s ease-in-out;
+		transform-style: preserve-3d;
+		top: 0;
+		left: 0;
+		width: 100%;		
+	}
+				
+	/* place front pane above back */
+	.front {
+		z-index: 2;
+		/* for firefox 31 */
+		transform: rotateY(0deg);
+	}
+
+	/* initially hide back pane */
+	.back {
+		transform: rotateY(-180deg);
+	}
+			
+	/* flip the pane when hovered */
+	.flipper:hover .back {
+		transform: rotateY(0deg);
+	}
+	.flipper:hover .front {
+		transform: rotateY(180deg);
+	}
+
+	.holder {
+		position: relative;
+		border-radius: 8px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: center;
+		align-content: flex-start;
+		cursor: pointer;
+		padding-bottom: 1em;
+		box-shadow: 0px 36px 82px -40px rgba(0,0,0,0.50);
+	}
+
+	/* gohost holder */
+	#ghost {
+		order: 10;
+	}
+	.front .ghost.holder {
+		background: var(--color-dark_blue);
+	}
+
+	.ghost.holder {
+		align-content: center;
+		cursor: default;
+		box-shadow: none;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		font-family: var(--font-heading);
+		font-size: var(--size-massive);
+		color: var(--color-blue);
+		text-align: center;
+	}
+
+	.ghost.holder span {
+		width: 80%;
+		margin: auto;
+		font-size: 0.9em;
+	}
+
+	.front .holder {
+		background: var(--color-white);
+		border-radius: 8px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.back .holder {
+		background-image: linear-gradient(to bottom, white 70%, whitesmoke 30.001%);
+		border-radius: 8px;
+		width: 100%;
+		height: 100%;
+	}
+
+		/* recipe-card-item */
+		.item {
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			flex: 0 0 100%;
+		}
+
+		/* thumbnail */
+		.thumbnail {
+			display: block;
+		    padding: 0;
+		    margin: 0;
+		    line-height: 1;
+		    border: none;
+		    box-shadow: none;
+		    border-radius: 8px 8px 0 0;
+		    -webkit-transition: border .2s ease-in-out;
+		    -o-transition: border .2s ease-in-out;
+		    transition: border .2s ease-in-out;
+		    background: transparent;
+		}
+			/* thumbnail-img */
+			.thumbnail img {
+				position: relative;
+				/*width: 100%;
+				max-width: 100%;*/
+				width: 101%;
+   				max-width: 102%;
+				height: auto;
+				border-radius: 8px 8px 0 0;
+				background: transparent;
+				text-align: center;
+				left: -1px;
+			}
+
+		/* title */
+		.title {
+			position: relative;
+			font-family: var(--font-heading);
+			font-size: var(--size-big);
+			font-weight: var(--weight-bold);
+			color: var(--color-title);
+			margin-top: 1.5em;
+		}
+
+		/* back-title */
+		.back-title {
+			position: relative;
+			font-family: var(--font-heading);
+			font-size: var(--size-big);
+			font-weight: var(--weight-bold);
+			color: var(--color-title);
+			margin: 2em 0 1.5em;
+		}
+
+		hr {
+			color: var(--color-title);
+			flex: 0 0 30% !important;
+			border-top: 1px solid;
+		}
+
+		/* description */
+		.description {
+			/*position: relative;*/
+			margin: 1.25em auto;
+			color: var(--color-description);
+			flex: 0 0 80%;
+			top:-0.5em;
+		}
+
+		/* list */
+		.holder ul {
+			position: relative;
+			padding: 0;
+			list-style: none;
+			font-size: var(--size-big);
+			margin: 2.5em 0 2.25em;
+			display: none;
+		}
+		.holder ul:first-of-type {
+			display: block;
+		}
+			
+			li {
+				color: var(--color-grey);
+				line-height: 2.2em;
+			}
+
+		/* button */
+		.btn-default{
+			position: relative;
+		    color: var(--color-white);
+		    background: var(--color-blue);
+		    font-family: var(--font-heading);
+		    text-transform: uppercase;
+		    font-weight: var(--weight-normal);
+		    padding: 0.85em 2em;
+		    margin-bottom: 1em;
+		    box-shadow: none;
+		    border: none;
+		    text-shadow: none;
+		    top:-0.5em;
+		}
+
+		/* button */
+		.back.btn-default{
+			position: relative;
+		    color: var(--color-white);
+		    background: var(--color-blue);
+		    font-family: var(--font-heading);
+		    text-transform: uppercase;
+		    font-weight: var(--weight-normal);
+		    padding: 1.5em 2em;
+		    box-shadow: none;
+		    border: none;
+		    text-shadow: none;
+		    height: auto;
+		    width: 65%;
+		    margin: 1em auto 0;
+		}
+			/* button:hover; */
+			.btn-default:hover	 {
+			    color: var(--color-white);
+			    background: var(--color-orange);
+			}
+
+
+		.hashtag {
+			position: absolute;
+			bottom: 1.5em;
+			flex: 0 0 100%;
+			margin: auto;
+			color: var(--color-grey);
+			font-size: var(--size-tiny);
+			align-self: stretch;
+		}
+
+/*------------- footer ---------------- */  
+footer {
+	grid-area: foot;
+	position: relative;
+	margin: 4em auto 2em;
+	text-align: center;
+}
+	.copyright {
+		position: relative;
+		margin-top: 2em;
+	}
+
+
+
+/* =============================
+   Icon font styles
+================================ */ 
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?metmws');
+  src:  url('../fonts/icomoon.eot?metmws#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?metmws') format('truetype'),
+    url('../fonts/icomoon.woff?metmws') format('woff'),
+    url('../fonts/icomoon.svg?metmws#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: var(--size-massive);
+  color: var(--color-dark_blue);
+  text-decoration: none;
+  cursor: pointer;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iinstagram:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\e901";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
+
+.pinterest {
+	cursor: pointer;
+}
+.pinterest img:hover {
+  opacity: 0.5;
+}
+
+
+/* ==========================================================================
+   @Media Queries
+========================================================================== */
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
+  	
+  	/*recipe-card */
+	.recipe {
+		flex: 0 0 47.5%;
+	}
+}
+
+@media (min-width: 992px) {
+  	
+  	/*recipe-card */
+	.recipe {
+		flex: 0 0 30%;
+	}
+}
+
+@media (min-width: 1200px) {
+  
+}

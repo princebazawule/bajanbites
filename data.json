@@ -1,0 +1,75 @@
+{
+    "bites": [
+    {
+        "number": 6,
+        "title": "Banana Bread",
+        "description": "A bajan favourite. Add crunchy peanut butter or peanuts for extra pop.",
+        "ingredients": [
+            "Banana",
+            "Brown sugar",
+            "Vanilla essence"
+        ],
+        "link": "https://medium.com/@IsleandDine/bajan-bites-banana-bread-17ffb74b1356",
+        "thumbURL": "img/banana-bread.png"
+    },
+    {
+        "number": 5,
+        "title": "BulJol",
+        "description": "A delightfully delicious blend of fresh flavours.",
+        "ingredients": [
+            "Saltfish",
+            "Sweet pepper",
+            "Lime"
+        ],
+        "link": "https://medium.com/@IsleandDine/bajan-bites-buljol-2e413f688528",
+        "thumbURL": "img/buljol.png"
+    },
+    {
+        "number": 4,
+        "title": "Coconut Sweet Bread",
+        "description": "coconut center, cherries on top, nothing beats this home-made treat.",
+        "ingredients": [
+            "Grated coconut",
+            "Brown sugar",
+            "Cherries"
+        ],
+        "link": "https://medium.com/@IsleandDine/bajan-bites-coconut-sweet-bread-b0736c9527da",
+        "thumbURL": "img/coconut-sweetbread.png"
+    },
+    {
+        "number": 3,
+        "title": "Rum Punch",
+        "description": "this cocktail packs a punch. Sweet & sour never tasted this good.",
+        "ingredients": [
+            "Rum (Eclipse)",
+            "Fresh-squeezed lime juice",
+            "Simple syrup *"
+        ],
+        "link": "https://medium.com/@IsleandDine/bajan-bites-rum-punch-d9a0c7df2f47",
+        "thumbURL": "img/rum-punch.png"
+    },
+    {
+        "number": 2,
+        "title": "Cou-Cou & Flying fish",
+        "description": "not a coucou fan? Try our recipe passed down 3 generations - you’ll love it.",
+        "ingredients": [
+            "Cornmeal",
+            "Thinly sliced okra",
+            "Butter"
+        ],
+        "link": "https://medium.com/@IsleandDine/bajan-bites-cou-cou-flying-fish-82d3ffc8a079",
+        "thumbURL": "img/coucou-flying-fish.png"
+    },
+    {
+        "number": 1,
+        "title": "Breadfruit & Salfish Balls",
+        "description": "crunchy on the outside, soft and fluffy inside.",
+        "ingredients": [
+            "Breadfruit",
+            "Saltfish",
+            "Sweet potato flour"
+        ],
+        "link": "https://medium.com/@IsleandDine/bajan-bites-breadfruit-salt-fish-balls-c58e5d7dd2b5",
+        "thumbURL": "img/breadfruit-saltfish-balls.png"
+    }]
+}
